@@ -2,6 +2,26 @@
 title: Spotify Playlist Data
 ---
 
+## Project Statement and Motivation
+
+holder
+
+## Intro and Data Description
+
+holder
+
+## Literature Review / Related Works
+
+holder
+
+## Modeling Approach and Project Trajectory
+
+holder
+
+## Results, Conclusions, and Future work
+
+holder
+
 This is the home page
 
 ## Lets have fun!!!
