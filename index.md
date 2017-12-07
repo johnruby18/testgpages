@@ -29,7 +29,6 @@ We acquired 1,595 official Spotify-generated non-user playlists and extracted 41
 * 'std_artists_count' The standard deviation number of artists per track
 * 'user' Either Spotify or a Spotify affiliate
 * 'mean_\[AUDIO_FEATURE\]' The average Spotify Audio Feature score across the playlist tracks, including:
-
     * acousticness
     * danceability
     * energy
@@ -40,7 +39,6 @@ We acquired 1,595 official Spotify-generated non-user playlists and extracted 41
     * speechiness
     * tempo
     * valence
-
 * 'std_\[AUDIO_FEATURE\]'The standard deviation of the above Spotify Audio Feature score across the playlist tracks
 * 'mean_artistfollowers' Average followers for the artists on the playlist
 * 'std_artistfollowers' Standard deviation of followers for the artists on the playlist
@@ -49,6 +47,23 @@ We acquired 1,595 official Spotify-generated non-user playlists and extracted 41
 * 'genre1' The most common genre appearing on the playlist
 * 'genre2' The second most common genre appearing on the playlist
 * 'genre3' The third most common genre appearing on the playlist
+
+Track and Artist scores, such as popularity scores, are determined outside the scope of the playlist.
+
+Certain features, such as'id' and 'name' are of no use to us. 'collab' had so few TRUE observations that we decided to drop it entirely. 
+
+Genre existed across 500 Spotify genres, so we grouped these into a smaller set of genres comprised of 'rock', 'jazz', 'pop', 'rap', 'indie', 'country', 'house', 'tropical', 'christmas', 'soul', 'folk', 'classical.' We chose these genres to be representive of the playlists Spotify has been producing. If 'rock' appeared in either 'genre1,' 'genre2,' or 'genre3,' we set the binary 'rock' feature to TRUE.
+
+We also introduced several genre-based interactions that we figured made sense, including
+*'rocklive' rock x mean_liveness
+*'rockloud' rock x mean_loudness
+*'poptempo' pop x mean_tempo
+*'jazztempo' jazz x mean_tempo
+*'rapvulgar' rap x total_explicit
+*'classicalinstru' classical x mean_instrumentalness
+* 'popenergy' pop x mean_energy
+
+
 
 ## Literature Review / Related Works
 
