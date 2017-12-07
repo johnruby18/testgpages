@@ -29,6 +29,7 @@ We acquired 1,595 official Spotify-generated non-user playlists and extracted 41
 * 'std_artists_count' The standard deviation number of artists per track
 * 'user' Either Spotify or a Spotify affiliate
 * 'mean_\[AUDIO_FEATURE\]' The average Spotify Audio Feature score across the playlist tracks, including:
+
 ...* acousticness
 ...* danceability
 ...* energy
@@ -39,6 +40,7 @@ We acquired 1,595 official Spotify-generated non-user playlists and extracted 41
 ...* speechiness
 ...* tempo
 ...* valence
+
 * 'std_\[AUDIO_FEATURE\]'The standard deviation of the above Spotify Audio Feature score across the playlist tracks
 * 'mean_artistfollowers' Average followers for the artists on the playlist
 * 'std_artistfollowers' Standard deviation of followers for the artists on the playlist
