@@ -55,19 +55,23 @@ Certain features, such as'id' and 'name' are of no use to us. 'collab' had so fe
 Genre existed across 500 Spotify genres, so we grouped these into a smaller set of genres comprised of 'rock', 'jazz', 'pop', 'rap', 'indie', 'country', 'house', 'tropical', 'christmas', 'soul', 'folk', 'classical.' We chose these genres to be representive of the playlists Spotify has been producing. If 'rock' appeared in either 'genre1,' 'genre2,' or 'genre3,' we set the binary 'rock' feature to TRUE.
 
 We also introduced several genre-based interactions that we figured made sense, including
-*'rocklive' rock x mean_liveness
-*'rockloud' rock x mean_loudness
-*'poptempo' pop x mean_tempo
-*'jazztempo' jazz x mean_tempo
-*'rapvulgar' rap x total_explicit
-*'classicalinstru' classical x mean_instrumentalness
+* 'rocklive' rock x mean_liveness
+* 'rockloud' rock x mean_loudness
+* 'poptempo' pop x mean_tempo
+* 'jazztempo' jazz x mean_tempo
+* 'rapvulgar' rap x total_explicit
+* 'classicalinstru' classical x mean_instrumentalness
 * 'popenergy' pop x mean_energy
 
+After this feature engineering, we have 52 features along with our response variable.
 
+We chose to transform followers to log(followers + 1) and normailze our other features to get them on similar scale. 
 
 ## Literature Review / Related Works
 
-holder
+We certainly relied on the Spotify Web API documentation (https://developer.spotify.com/web-api/user-guide/), as well as Spotify's proprietary audio feature scores. We were unable to find any information about how Spotify extracts these features.
+
+We also used SKlearn as well as CS109a course materials.
 
 ## Modeling Approach and Project Trajectory
 
