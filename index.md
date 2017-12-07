@@ -12,49 +12,41 @@ We noticed in our EDA that playlists tend to fall into two buckets at around the
 
 All of our data comes from the Spotify API.
 
-We acquired just under 1,595 official Spotify-generated non-user playlists and extracted 41 features as follows:
+We acquired 1,595 official Spotify-generated non-user playlists and extracted 41 features (including some Spotify generated scores) as follows:
 
-* 'id'
-* 'name'
-* 'followers' 
-* 'collab'
-* 'num_tracks'
-* 'mean_time'
-* 'std_time'
-* 'total_explicit'
-* 'mean_popularity'
-* 'std_popularity'
-* 'max_popularity'
-* 'mean_artists_count'
-* 'std_artists_count'
-* 'user'
-* 'mean_acousticness'
-* 'std_acousticness'
-* 'mean_danceability'
-* 'std_danceability'
-* 'mean_energy'
-* 'std_energy'
-* 'mean_instrumentalness'
-* 'std_instrumentalness'
-* 'mean_liveness'
-* 'std_liveness'
-* 'mean_loudness'
-* 'std_loudness'
-* 'mean_mode'
-* 'std_mode'
-* 'mean_speechiness'
-* 'std_speechiness'
-* 'mean_tempo'
-* 'std_tempo'
-* 'mean_valence'
-* 'std_valence'
-* 'mean_artistfollowers'
-* 'std_artistfollowers'
-* 'mean_artistpopularity'
-* 'std_artistpopularity'
-* 'genre1'
-* 'genre2'
-* 'genre3'
+* 'id' A unique ID for the playlist in the API
+* 'name' The Name of the playlist
+* 'followers' The Number of Spotify users who follow the playlist, our response
+* 'collab' Whether or not the playlist is collaborative
+* 'num_tracks' The length of the playlist
+* 'mean_time' The average length of each song 
+* 'std_time' The standard deviation of the length of each song
+* 'total_explicit' The number of explicit tracks on the playlist
+* 'max_popularity' The popularity score of the most popular track on the playlist
+* 'mean_popularity' The average popularity score for tracks on the playlist
+* 'std_popularity' The standard deviation of popularity scores for tracks on the playlist
+* 'mean_artists_count' The average number of artists per track
+* 'std_artists_count' The standard deviation number of artists per track
+* 'user' Either Spotify or a Spotify affiliate
+* 'mean_\[AUDIO_FEATURE\]' The average Spotify Audio Feature score across the playlist tracks, including:
+..* acousticness
+..* danceability
+..* energy
+..* instrumentalness
+..* liveness
+..* loudness
+..* mode
+..* speechiness
+..* tempo
+..* valence
+* 'std_\[AUDIO_FEATURE\]'The standard deviation of the above Spotify Audio Feature score across the playlist tracks
+* 'mean_artistfollowers' Average followers for the artists on the playlist
+* 'std_artistfollowers' Standard deviation of followers for the artists on the playlist
+* 'mean_artistpopularity' Average popularity score for artists on the playlist
+* 'std_artistpopularity' Standard Deviation of popularity score for artists on the playlist
+* 'genre1' The most common genre appearing on the playlist
+* 'genre2' The second most common genre appearing on the playlist
+* 'genre3' The third most common genre appearing on the playlist
 
 ## Literature Review / Related Works
 
