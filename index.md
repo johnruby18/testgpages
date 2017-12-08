@@ -82,8 +82,7 @@ The following websites were also helpful along the way: https://burakhimmetoglu.
 Getting the data from went fairly well for our group. One of us had some experience working with APIs before, and the spotipy package was pretty good. The code did take all night to run, since many calls were needed to get information on the playlists, the component tracks, the audio features for the component tracks, and the artist info. We may have not had the most efficient code to make multiple repeated requests to the API, but given the one-time-only nature of getting the data, it was good enough. We're pretty happy with the amount of features we got from the API, given we went beyond playlist level data by extracting track-by-track metrics and audio features.
 
 #### Modeling Approach
-
-We decided to opt for more of a 
+holder
 
 ## Results, Conclusions, and Future work
 
