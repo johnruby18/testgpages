@@ -73,11 +73,17 @@ We certainly relied on the Spotify Web API documentation (https://developer.spot
 
 We also used SKlearn as well as CS109a course materials.
 
+The following websites were also helpful along the way: https://burakhimmetoglu.com/2016/12/01/stacking-models-for-improved-predictions/ for a refresher on the concept of stacking and https://en.wikipedia.org/wiki/Support_vector_machine for Support vector machines.
+
 ## Modeling Approach and Project Trajectory
 
-#### Scraping
+#### API Work
 
-holder
+Getting the data from went fairly well for our group. One of us had some experience working with APIs before, and the spotipy package was pretty good. The code did take all night to run, since many calls were needed to get information on the playlists, the component tracks, the audio features for the component tracks, and the artist info. We may have not had the most efficient code to make multiple repeated requests to the API, but given the one-time-only nature of getting the data, it was good enough. We're pretty happy with the amount of features we got from the API, given we went beyond playlist level data by extracting track-by-track metrics and audio features.
+
+#### Modeling Approach
+
+We decided to opt for more of a 
 
 ## Results, Conclusions, and Future work
 
