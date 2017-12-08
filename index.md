@@ -75,7 +75,7 @@ We also used SKlearn as well as CS109a course materials.
 
 ## Modeling Approach and Project Trajectory
 
-# Scraping
+#### Scraping
 
 holder
 
